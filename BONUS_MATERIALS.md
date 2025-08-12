@@ -317,6 +317,37 @@ What would each expert recommend for [SITUATION]?
 
 ---
 
+##  workflow Brand Voice & Tone Guide
+
+**Use Case**: Defining a consistent brand voice for the AI to use across all generated content.
+
+```
+**Our Brand Voice is:** [e.g., Confident, but not arrogant. Helpful, but not condescending. Professional, but not cold.]
+
+**Core Attributes (Choose 3-5):**
+- [ ] Expert
+- [ ] Friendly
+- [ ] Formal
+- [ ] Casual
+- [ ] Humorous
+- [ ] Serious
+- [ ] Modern
+- [ ] Traditional
+
+**Tone Examples:**
+- **When writing marketing copy, we should sound:** [e.g., Energetic and inspiring]
+- **When writing customer support emails, we should sound:** [e.g., Empathetic and reassuring]
+- **When writing technical documents, we should sound:** [e.g., Clear, concise, and authoritative]
+
+**Vocabulary - Words to Use:**
+- [e.g., "Collaborate", "Streamline", "Innovate"]
+
+**Vocabulary - Words to Avoid:**
+- [e.g., "Synergy", "Rockstar", "Crush it"]
+```
+
+---
+
 **🎉 Congratulations! You now have everything needed to implement professional AI prompts in your business effectively.**
 
 ---
