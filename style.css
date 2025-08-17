@@ -1,0 +1,211 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #1a202c;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    color: #5a677d;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#app {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-right: 1px solid #e0e0e0;
+}
+
+#sidebar h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+#category-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+#category-list li {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+#category-list li:hover {
+    background-color: #eef2f7;
+}
+
+#category-list li.active {
+    background-color: #4a90e2;
+    color: #fff;
+    font-weight: bold;
+}
+
+.prompt-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+}
+
+.prompt-list li {
+    background-color: #f8fafc;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.prompt-list li:hover {
+    background-color: #eef2f7;
+    border-color: #4a90e2;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+#content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+#prompt-title {
+    margin-top: 0;
+    color: #1a202c;
+}
+
+#prompt-use-case {
+    font-style: italic;
+    color: #5a677d;
+    margin-bottom: 2rem;
+}
+
+#prompt-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#prompt-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#prompt-form input[type="text"],
+#prompt-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#prompt-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#prompt-form button {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+}
+
+#prompt-form button:hover {
+    background-color: #357abd;
+}
+
+#generated-prompt-container {
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1.5rem;
+}
+
+#generated-prompt {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+}
+
+#copy-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+#copy-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    color: #5a677d;
+    font-size: 0.9rem;
+}
