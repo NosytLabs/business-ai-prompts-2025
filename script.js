@@ -1,4 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const startupErrorEl = document.getElementById('startup-error');
+    const appContainerEl = document.getElementById('app-container');
+
+    if (window.location.protocol === 'file:') {
+        appContainerEl.style.display = 'none';
+        startupErrorEl.style.display = 'block';
+        startupErrorEl.innerHTML = `
+            <div class="error-box">
+                <h2>Error: Application Must Be Run on a Web Server</h2>
+                <p>This interactive application cannot be opened directly from your computer's files. For it to work, you need to serve it using a simple local web server.</p>
+                <p><strong>Don't worry, it's easy! Just follow these steps:</strong></p>
+                <ol>
+                    <li>Make sure you have Python installed on your system (most computers do).</li>
+                    <li>Open your terminal or command prompt in the folder containing the app files.</li>
+                    <li>Type this exact command and press Enter: <code>python -m http.server</code></li>
+                    <li>Open your web browser and go to this address: <a href="http://localhost:8000" target="_blank">http://localhost:8000</a></li>
+                </ol>
+                <p>The application will then load correctly. This is a standard security measure in modern browsers.</p>
+            </div>
+        `;
+        return; // Stop the rest of the script from running
+    }
+
     const categoryList = document.getElementById('category-list');
     const promptTitleEl = document.getElementById('prompt-title');
     const promptUseCaseEl = document.getElementById('prompt-use-case');

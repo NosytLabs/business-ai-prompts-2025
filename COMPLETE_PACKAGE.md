@@ -141,10 +141,13 @@ No hype, no fake testimonials - just useful tools that help you get work done fa
 Instant download. Lifetime access.
 ```
 
+### **Features**
+100+ business AI prompts. Instant download & lifetime access. Get a head start on success. Includes free community chat.
+
 ### **Categories & Tags**
 - **Primary**: Digital Products > Business > Productivity
 - **Secondary**: Business Tools, Templates
-- **Tags**: AI, Business, Prompts, Productivity, Templates, Professional, Automation, Marketing, Sales
+- **Tags**: AI, Business, Prompts, Productivity, Templates, Professional, Automation, Marketing, Sales, Community Chat
 
 ---
 
