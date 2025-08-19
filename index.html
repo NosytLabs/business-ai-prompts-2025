@@ -12,19 +12,25 @@
         <p>50 tested AI prompts to help you work smarter with ChatGPT, Claude, and other AI tools</p>
     </header>
     <main>
-        <div id="app">
-            <div id="sidebar">
-                <h2>Categories</h2>
-                <ul id="category-list"></ul>
-            </div>
-            <div id="content">
-                <h2 id="prompt-title"></h2>
-                <p id="prompt-use-case"></p>
-                <div id="prompt-form"></div>
-                <div id="generated-prompt-container" style="display:none;">
-                    <h3>Generated Prompt</h3>
-                    <textarea id="generated-prompt" readonly></textarea>
-                    <button id="copy-button">Copy to Clipboard</button>
+        <div id="startup-error" style="display: none;">
+            <!-- Error message will be injected by script.js -->
+        </div>
+
+        <div id="app-container"> <!-- This wrapper will be hidden on error -->
+            <div id="app">
+                <div id="sidebar">
+                    <h2>Categories</h2>
+                    <ul id="category-list"></ul>
+                </div>
+                <div id="content">
+                    <h2 id="prompt-title"></h2>
+                    <p id="prompt-use-case"></p>
+                    <div id="prompt-form"></div>
+                    <div id="generated-prompt-container" style="display:none;">
+                        <h3>Generated Prompt</h3>
+                        <textarea id="generated-prompt" readonly></textarea>
+                        <button id="copy-button">Copy to Clipboard</button>
+                    </div>
                 </div>
             </div>
         </div>
